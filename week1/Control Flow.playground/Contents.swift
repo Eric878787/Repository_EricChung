@@ -9,18 +9,26 @@ for lastThree in lottoNumbers[3...5] {
 
 //2
 
-print("5\n6\n7\n8\n9\n10")
-print("10\n8\n6")
+for lottoNumber: Int in lottoNumbers {
+    print("\( 15 - lottoNumber)")
+}
+
+for evenLottoNumber in lottoNumbers {
+    if evenLottoNumber % 2 == 0 {
+        print(evenLottoNumber)
+}
+}
 
 //3
-var i = 5
+
+var i = lottoNumbers[5]
 
 while i <= 10 {
     print(i)
     i += 1
 }
 
-var j = 10
+var j = lottoNumbers[0]
 
 while j >= 6 {
     print(j)
@@ -28,7 +36,7 @@ while j >= 6 {
 }
 
 //4
-var k = 5
+var k = lottoNumbers[5]
 
 repeat {
     print(k)
@@ -36,7 +44,7 @@ repeat {
 } while k <= 10
 
 
-var l = 10
+var l = lottoNumbers[0]
 
 repeat {
     print(l)

@@ -1,12 +1,12 @@
 import UIKit
 
 //1
-func greet(person: String) -> String {
-    let greeting = "Hello," + person
+func greet(person name: String) -> String {
+    let greeting = "Hello," + name
     return greeting
 }
 
-print(greet(person: "Luke"))
+greet(person: "Luke")
 
 //2
 func multiply(for a: Int, b: Int = 10) {
@@ -29,3 +29,4 @@ func payment() -> Double {
     
 }
 // The return type of func Payment is Double.
+
