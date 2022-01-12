@@ -1,10 +1,11 @@
 import UIKit
 
 // 1
-/*
-let Pi = 3
-應使用"let"宣告Pi，因為Pi為圓周率常數，不會變動。
-*/
+let Pi: Float = 3.14
+var radius: Float = 5.0
+
+let theAreaOfCorcle = 2 * radius * Pi
+//應使用"let"宣告Pi，因為Pi為圓周率常數，不會變動。
 
 //2
 let x:Int = 2
@@ -20,7 +21,7 @@ print(averageFloat)
 var flag: Bool = true
 var inputString: String = "Hello world."
 let bitsInBite: Int = 8
-let averageScore: Float = 86.8
+let averageScore: Double = 86.8
 
 //5
 var salary = 22000

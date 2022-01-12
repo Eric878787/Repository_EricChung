@@ -27,7 +27,7 @@
  Everything up-to-date
 
 ● git remote -v
- git remote 用以進入remote repo並查看
+ git remote -v 可以查看遠端repo的“列表”
  Chungde-MBP:Repository_pingChunChung ericchung$ git remote -v
  origin    https://github.com/Eric878787/repo_test.git (fetch)
  origin    https://github.com/Eric878787/repo_test.git (push)

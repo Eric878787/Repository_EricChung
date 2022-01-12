@@ -3,58 +3,70 @@ import UIKit
 let lottoNumbers = [10, 9, 8, 7, 6, 5]
 
 //1
-for lastThree in lottoNumbers[0...2] {
+for lastThree in lottoNumbers[3...5] {
     print(lastThree)
 }
 
 //2
-var reversedlottoNumbers = [5, 6, 7, 8, 9, 10]
-for listOfReversed in reversedlottoNumbers {
-    print(listOfReversed)
-}
 
-reversedlottoNumbers.reverse()
-reversedlottoNumbers.remove(at: 1)
-reversedlottoNumbers.remove(at: 2)
-reversedlottoNumbers.remove(at: 3)
-for newLottoNumbers in reversedlottoNumbers {
-    print(newLottoNumbers)
-}
+print("5\n6\n7\n8\n9\n10")
+print("10\n8\n6")
 
 //3
 var i = 5
-while i <= 10 && i >= 5 {
+
+while i <= 10 {
     print(i)
-    i -= 1
+    i += 1
 }
 
-var a = 10
-while a <= 10 && a >= 6 {
-    if a != 9 && a != 7 {
-    print(a)
-    }
-    a -= 1
+var j = 10
+
+while j >= 6 {
+    print(j)
+    j -= 2
 }
 
 //4
- 
-i = 5
+var k = 5
+
 repeat {
-    print(i)
-    i -= 1
-} while i <= 10 && i >= 5
+    print(k)
+    k += 1
+} while k <= 10
 
-//** Repeat-while loopr解法尚未find out
 
-//5 still finding out
+var l = 10
 
-//6 still finding out
-/*
-var isRaining: Bool
-if isRaining == true {
-    print("It’s raining, I don’t want to work today.")
+repeat {
+    print(l)
+    l -= 2
+} while l >= 6
+
+//5
+// while loop 會先檢查條件才會進到loop執行; repeat-while loop會先執行一次（以上題為例，會先print變數，故k若設為100，也會印出一次）
+
+//6
+let isRaining = true
+
+if isRaining {
+    print("It's raining, I don't want to work today.")
 } else {
-    print ("Although it’s sunny, I still don’t want to work today.") }
-*/
+    print("Although it's sunny, I still don't want to work today.")
+}
 
-//7 still finding out
+//7
+var jobLevel = 1
+
+switch jobLevel {
+case 1 :
+    print("Member")
+case 2 :
+    print("Team Leader")
+case 3 :
+    print("Manager")
+case 4 :
+    print("Directer")
+default:
+    print("We don't have this job.")
+}
