@@ -21,35 +21,31 @@ for evenLottoNumber in lottoNumbers {
 
 //3
 
-var i = lottoNumbers[5]
-
-while i <= 10 {
-    print(i)
+var i = 0
+while i <= 5 {
+    print(lottoNumbers[5-i])
     i += 1
 }
 
-var j = lottoNumbers[0]
-
-while j >= 6 {
-    print(j)
-    j -= 2
+var j = 0
+while j <= 5 {
+    print(lottoNumbers[j])
+    j += 2
 }
 
 //4
-var k = lottoNumbers[5]
-
+var k = 0
 repeat {
-    print(k)
+    print(lottoNumbers[5-k])
     k += 1
-} while k <= 10
+} while k <= 5
 
 
-var l = lottoNumbers[0]
-
+var l = 0
 repeat {
-    print(l)
-    l -= 2
-} while l >= 6
+    print(lottoNumbers[l])
+    l += 2
+} while l <= 5
 
 //5
 // while loop 會先檢查條件才會進到loop執行; repeat-while loop會先執行一次（以上題為例，會先print變數，故k若設為100，也會印出一次）
