@@ -19,4 +19,4 @@ struct Engineer: ToolMan {
     static func fixComputer() -> Void {}
 }
 
-let Steven = Person(name: "Steven", toolMan:  )
+let Steven = Person(name:"Steven", toolMan: Engineer())
