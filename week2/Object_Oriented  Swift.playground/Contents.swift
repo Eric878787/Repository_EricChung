@@ -43,18 +43,20 @@ class Horse: Animal {
 
 class Zoo {
     
-    var weeklyHot: Tiger
-    init(weeklyHot: Tiger) {
+    var weeklyHot: Animal
+    init(weeklyHot: Animal) {
         self.weeklyHot = weeklyHot
     }
     
 }
 
+let tiger = Tiger()
+let elephant = Elephant()
+let horse = Horse()
 let zoo = Zoo (weeklyHot: Tiger())
 zoo.weeklyHot = tiger
 zoo.weeklyHot = elephant
 zoo.weeklyHot = horse
-
 
 //4 What’s the difference between Struct and Class ?
 // - Struct是value type , 而Class是reference type
