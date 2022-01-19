@@ -20,6 +20,8 @@ for allFriends in myFriends {
     print(allFriends)
 }
 
+var a = Int.random(in: 0...3)
+
 //6
 /*
 Error
