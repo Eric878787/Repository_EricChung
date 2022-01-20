@@ -12,3 +12,11 @@ class GuessNumerGame {
         print("Guess the right number: \(targetNumber)")
     }
 }
+
+var round1 = GuessNumerGame()
+
+do {
+    try round1.guess(number: 20)
+} catch GuessNumberGameError.wrongNumber {
+    print("Wrong Number!")
+}

@@ -70,7 +70,7 @@ zoo.weeklyHot = horse
 // initializer 可以指派值或參數給class, struct內的properties
 
 //7 What does self mean in an instance method and a type method ?
-// self在instance method 及 type method指的是代表自身的“屬性”。例如在呼叫method時重新賦值並需要比較與原始值的大小，急需要self.介入。
+// self在instance method 指的是代表自身的instance。而在type method裡面指的是一個type(例如：在class Cars 裡面的static func中使用self.指的是Cars這個type而不是Cars type裡的一個instance)。
 
 //8 What’s the difference between reference type and value type ?
 // 兩者儲存資料的位置不同，在value type中被重新指派給另一變數或常數時，實際上是複製原變數或常數的值，若對新的變數或常數重新賦值，不會影響原變數或常數。
